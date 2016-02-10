@@ -1,8 +1,8 @@
 package ir.angellandros.uebersetzer.category;
 
-public class Categories
+public class Types
 {
-	public static AtomicCategory parseAtomicCategory(String string)
+	public static ExponentialType parseAtomicCategory(String string)
 	{
 		if(string.contains("^"))
 		{
@@ -10,11 +10,11 @@ public class Categories
 			String type = splited[0];
 			String tail = splited[1];
 			int degree = tail.length() * (tail.charAt(0) == 'r'? 1: -1);
-			return new AtomicCategory(type, degree);
+			return new ExponentialType(type, degree);
 		}
 		else
 		{
-			return new AtomicCategory(string);
+			return new ExponentialType(string);
 		}
 	}
 }
