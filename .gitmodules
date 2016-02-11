@@ -1,0 +1,3 @@
+[submodule "kollektion"]
+	path = kollektion
+	url = https://github.com/angellandros/kollektion.git
